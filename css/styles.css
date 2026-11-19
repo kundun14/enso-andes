@@ -357,11 +357,11 @@ section {
 }
 
 .consortium-logo {
-  height: 92px;
-  width: auto;
-  max-width: 100%;
+  height: 150px;
+  width: 100%;
+  max-width: 260px;
   object-fit: contain;
-  margin: 0 auto 1rem;
+  margin: 0 auto 1.15rem;
 }
 
 .consortium-card {
