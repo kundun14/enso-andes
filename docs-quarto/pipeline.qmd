@@ -27,6 +27,8 @@ La investigación adopta un diseño cuantitativo, experimental y biofísico acop
 
 ![Metodología de seguimiento fenológico proximal con fenocámaras](../assets/figures/fig5_fenocamaras_gcc.png)
 
+![Esquema de calibración y validación en DSSAT v4.8 (CERES-Maize y SUBSTOR-Potato)](../assets/figures/dssat_ceres_substor.png)
+
 ## OE 3: Modelamiento Regional DSSAT v4.8 y Análisis ENSO
 
 - **Entradas:** Series diarias **PISCO v3.0** (1981–2024, `.WTH`), suelos regionales (`AllpaDB`, `INIA`, `SoilGrids 2.0`) y coeficientes calibrados (`SUBSTOR-Potato` y `CERES-Maize`).

@@ -11,7 +11,6 @@
   <header class="navbar">
     <div class="container navbar-inner">
       <a class="brand" href="#top">
-        <img src="./assets/enso-andes-logo.png" alt="Logo ENSO-ANDES">
         <span>ENSO-ANDES</span>
       </a>
       <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
@@ -40,30 +39,7 @@
           fenotipado proximal IoT en <strong>K'ayra (Cusco)</strong> y <strong>La Molina (Lima)</strong>.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#methods">Ver Metodología Detallada</a>
-          <a class="btn btn-outline" href="./docs-quarto/pipeline.html">Docs Quarto</a>
-          <button id="open-domain-modal" class="btn btn-outline" type="button">Ficha del Proyecto</button>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <img src="./assets/enso-andes-logo.png" alt="Emblema ilustrado ENSO-ANDES">
-        <div class="hero-stats">
-          <div class="hero-stat-item">
-            <strong>24 Meses</strong>
-            <span>Abr 2027 – Mar 2029</span>
-          </div>
-          <div class="hero-stat-item">
-            <strong>44 Años</strong>
-            <span>Serie PISCO v3.0 (1981–2024)</span>
-          </div>
-          <div class="hero-stat-item">
-            <strong>24 Sub-parcelas</strong>
-            <span>Split-Plot por localidad</span>
-          </div>
-          <div class="hero-stat-item">
-            <strong>nRMSE &lt; 15%</strong>
-            <span>Meta de calibración DSSAT</span>
-          </div>
+          <a class="btn btn-primary" href="./docs-quarto/pipeline.html">Docs Quarto</a>
         </div>
       </div>
     </div>
@@ -260,6 +236,13 @@
               <code>SUBSTOR-Potato</code> (G2, G3, PD, TC, P2) y <code>CERES-Maize</code> (P1, P2, P5, G2, G3, PHINT).
             </p>
           </article>
+        </div>
+
+        <div class="figure-card" style="margin-top: 1.5rem; margin-bottom: 0; max-width: 720px; margin-left: auto; margin-right: auto;">
+          <img src="./assets/figures/dssat_ceres_substor.png" alt="Flujo de calibración y validación en DSSAT v4.8 para CERES-Maize y SUBSTOR-Potato">
+          <p class="figure-caption">
+            <strong>Figura 6B.</strong> Esquema de calibración y validación en DSSAT v4.8 acoplando experimentos de campo (parámetros observados) con los módulos <code>CERES-Maize</code> y <code>SUBSTOR-Potato</code>.
+          </p>
         </div>
       </div>
 
@@ -548,19 +531,6 @@
       <a href="#top">Volver arriba ↑</a>
     </div>
   </footer>
-
-  <div id="domain-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-    <div class="modal-box">
-      <h3 id="modal-title">Ficha Resumen · ENSO-ANDES</h3>
-      <p>
-        <strong>Código:</strong> CONCYTEC–PROCIENCIA E041-2027-03 (Modalidad I, Tipo B).<br>
-        <strong>Duración:</strong> 24 meses (01/04/2027 – 31/03/2029).<br>
-        <strong>Presupuesto Total:</strong> S/ 343,240.00 (PROCIENCIA S/ 268,946.00 + contrapartida no monetaria UNALM/UNSAAC).<br>
-        <strong>Sitio Web:</strong> <code>https://kundun14.github.io/enso-andes/</code>
-      </p>
-      <button id="close-domain-modal" class="btn btn-accent" type="button">Cerrar</button>
-    </div>
-  </div>
 
   <script src="./js/main.js"></script>
 </body>
