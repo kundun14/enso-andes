@@ -22,8 +22,8 @@
         <a href="#timeline">Cronograma</a>
         <a href="#results">Resultados</a>
         <a href="#consortium">Consorcio</a>
-        <a href="#tools">Herramientas</a>
-        <a href="#contact">Contacto</a>
+        <a href="#tools">Librería &amp; Equipos</a>
+        <a href="#links">Links</a>
         <a href="./docs-quarto/index.html">Docs (Quarto)</a>
       </nav>
     </div>
@@ -67,6 +67,7 @@
         </div>
       </div>
     </div>
+    <span class="hero-credit">Photograph by Jim Richardson</span>
   </section>
 
   <section id="about">
@@ -403,20 +404,72 @@
   <section id="tools">
     <div class="container">
       <div class="section-header">
-        <span class="section-eyebrow">07 · Herramientas &amp; Ciencia Abierta</span>
-        <h2>Ecosistema de software, hardware y datos FAIR</h2>
-        <p>Todos los scripts, protocolos y conjuntos de datos validados se publicarán bajo licencia CC BY 4.0 / MIT.</p>
+        <span class="section-eyebrow">07 · Librería, Sensores &amp; Herramientas</span>
+        <h2>Instrumentación de campo, laboratorio y stack computacional</h2>
+        <p>Equipos biofísicos, librerías de modelamiento y protocolos FAIR empleados en la metodología del proyecto.</p>
       </div>
-      <div class="grid-2">
+
+      <h3 class="method-block-title">Sensores e Instrumentos de Campo y Laboratorio</h3>
+      <div class="grid-4" style="margin-bottom: 2.2rem;">
         <article class="card">
-          <h3>Modelamiento &amp; Análisis</h3>
-          <p>DSSAT v4.8 (SUBSTOR-Potato, CERES-Maize), R, Python, PISCO v3.0 (SENAMHI) y método GLUE.</p>
-          <a class="card-link" href="./docs-quarto/tools.html">Ver stack técnico →</a>
+          <img class="instrument-img" src="./assets/instruments/accupar-lp80.jpg" alt="Ceptómetro AccuPAR LP-80">
+          <h3>Ceptómetro AccuPAR LP-80</h3>
+          <p>
+            METER Group (80 sensores cuánticos PAR, 400–700 nm). Medición semanal no destructiva de
+            <code>fPAR</code> e Índice de Área Foliar (<code>LAI</code>).
+          </p>
         </article>
         <article class="card">
-          <h3>Repositorio GitHub del Proyecto</h3>
-          <p>Código fuente de la plataforma web, workflow de Quarto y documentación reproducible.</p>
-          <a class="card-link" href="https://github.com/kundun14/enso-andes" target="_blank" rel="noopener">github.com/kundun14/enso-andes →</a>
+          <img class="instrument-img" src="./assets/instruments/thetaprobe-ml3.png" alt="Sensor de humedad ThetaProbe ML3">
+          <h3>ThetaProbe ML3</h3>
+          <p>
+            Delta-T Devices (impedancia a 100 MHz). Control puntual de humedad volumétrica (VWC) a
+            0–20 y 20–40 cm para activar riego por umbral <code>MAD</code>.
+          </p>
+        </article>
+        <article class="card">
+          <img class="instrument-img" src="./assets/instruments/esp32-cam.jpg" alt="Módulo Fenocámara IoT ESP32-CAM">
+          <h3>Fenocámara IoT ESP32-CAM</h3>
+          <p>
+            8 nodos autónomos RGB (1.5 m en papa, 2.5 m en maíz). Registro horario para series
+            <code>GCC</code> y ajuste logístico doble (<code>SOS, POP, EOS</code>).
+          </p>
+        </article>
+        <article class="card">
+          <img class="instrument-img" src="./assets/instruments/richards-plate.webp" alt="Extractor de Platos de Presión de Richards">
+          <h3>Ollas de Richards (1600 / 1500)</h3>
+          <p>
+            Soilmoisture Equipment Corp. (UNSAAC). Curvas experimentales <code>pF</code> de 0.1 a 15.0 bar
+            sobre cilindros Uhland de 100 cm³.
+          </p>
+        </article>
+      </div>
+
+      <h3 class="method-block-title">Librerías, Software y Bases de Datos</h3>
+      <div class="grid-3">
+        <article class="card">
+          <h3>DSSAT v4.8 &amp; GLUE</h3>
+          <p>
+            Módulos <code>SUBSTOR-Potato</code> y <code>CERES-Maize</code>, calibración bayesiana
+            <code>GCE / GLUE</code>, archivos <code>.SOL, .WTH, .CUL, .EXP, File A, File T</code>.
+          </p>
+          <a class="card-link" href="./docs-quarto/tools.html">Ver stack completo →</a>
+        </article>
+        <article class="card">
+          <h3>R &amp; Python (Análisis &amp; IoT)</h3>
+          <p>
+            Ajuste no lineal Levenberg-Marquardt (<code>van Genuchten</code>), procesamiento RGB
+            <code>GCC/ExG</code>, ANOVA multifactorial, pruebas Tukey/Duncan y firmware <code>ESP-IDF</code>.
+          </p>
+          <a class="card-link" href="https://github.com/kundun14/enso-andes" target="_blank" rel="noopener">Repositorio GitHub →</a>
+        </article>
+        <article class="card">
+          <h3>PISCO v3.0, AllpaDB &amp; LENA</h3>
+          <p>
+            Grilla climática diaria SENAMHI (1981–2024), perfiles de suelo <code>AllpaDB</code> /
+            <code>SoilGrids 2.0</code>, y análisis bromatológico AOAC (<code>Kjeldahl, ANKOM, Parr, FAAS</code>).
+          </p>
+          <a class="card-link" href="./docs-quarto/pipeline.html">Ver flujo de datos →</a>
         </article>
       </div>
 
@@ -436,10 +489,42 @@
     </div>
   </section>
 
-  <section id="contact" class="section-bg-light">
+  <section id="links" class="section-bg-light">
     <div class="container">
       <div class="section-header">
-        <span class="section-eyebrow">08 · Contacto</span>
+        <span class="section-eyebrow">08 · Links Externos de Consulta</span>
+        <h2>Portales científicos y plataformas de referencia</h2>
+        <p>Fuentes oficiales para monitoreo ENSO, modelamiento de cultivos, investigación en papa y datos climáticos.</p>
+      </div>
+      <div class="grid-4">
+        <article class="card">
+          <h3>NOAA CPC · ONI v6</h3>
+          <p>Monitoreo oficial del Índice Oceánico El Niño (ONI) para clasificación climática de campañas.</p>
+          <a class="card-link" href="https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/oni/v6/" target="_blank" rel="noopener">Visitar NOAA ONI v6 →</a>
+        </article>
+        <article class="card">
+          <h3>DSSAT.net</h3>
+          <p>Portal oficial del sistema de soporte de decisiones para transferencia de agrotecnología.</p>
+          <a class="card-link" href="https://dssat.net/" target="_blank" rel="noopener">Visitar DSSAT →</a>
+        </article>
+        <article class="card">
+          <h3>CIP · Papa</h3>
+          <p>Centro Internacional de la Papa: investigación andina, fenotipado proximal y seguridad alimentaria.</p>
+          <a class="card-link" href="https://cipotato.org/es/" target="_blank" rel="noopener">Visitar CIP →</a>
+        </article>
+        <article class="card">
+          <h3>IRI Columbia · PISCO</h3>
+          <p>Instituto Internacional de Investigación para el Clima y la Sociedad (productos climáticos y PISCO).</p>
+          <a class="card-link" href="https://iri.columbia.edu/" target="_blank" rel="noopener">Visitar IRI Columbia →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">09 · Contacto</span>
         <h2>Equipo y coordinación</h2>
         <p>Concurso CONCYTEC–PROCIENCIA E041-2027-03 · UNALM &amp; UNSAAC.</p>
       </div>
