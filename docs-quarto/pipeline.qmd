@@ -13,7 +13,7 @@ La investigación adopta un diseño cuantitativo, experimental y biofísico acop
 - **Fertilidad LASPAF-UNALM:** Granulometría Bouyoucos, densidad aparente, materia orgánica (Walkley-Black), pH, CE, CIC, P (Olsen) y K.
 - **Ajuste van Genuchten:** Optimización Levenberg-Marquardt para derivar `SAT`, `DUL` y `LL` directos en archivos `.SOL`.
 
-![Flujo de caracterización física, química e hidrodinámica del suelo](../assets/figures/fig2_flujo_suelo.png)
+![Protocolo gravimétrico y volumétrico en Ollas de Richards](../assets/figures/fig14_richards_flujo.png)
 
 ![Curva característica de retención de humedad van Genuchten](../assets/figures/fig3_curva_retencion.png)
 
