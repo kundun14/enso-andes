@@ -1,14 +1,24 @@
 ---
-title: "Herramientas y Tutoriales"
+title: "Herramientas, Sensores y Ciencia Abierta"
 ---
 
-## Repositorios de ejemplo
+## Software y Datos Climáticos
 
-- Código fuente del sitio: <https://github.com/kundun14>
-- Sitio publicado (una vez desplegado): <https://kundun14.github.io/github_page_hydra/>
+- **Modelamiento:** DSSAT v4.8 (módulos `SUBSTOR-Potato` y `CERES-Maize`), calibración con método GLUE.
+- **Análisis y Procesamiento:** R, Python y scripts abiertos para procesamiento de imágenes cenitales (GCC/ExG).
+- **Clima Histórico:** Serie grillada diaria **PISCO v3.0** (SENAMHI, 1981–2024) e índices **ONI / ICEN** (NOAA / ENFEN).
 
-## Tutoriales {#tutorials}
+## Hardware de Campo y Laboratorio
 
-1. Editar textos en `index.html` o en los archivos `.qmd`.
-2. Hacer `git push` a la rama `main`.
-3. Verificar la ejecución en **GitHub Actions**.
+- **8 Fenocámaras IoT (ESP32-CAM):** Monitoreo proximal continuo de bajo costo (< S/ 150 por nodo).
+- **2 Ceptómetros AccuPAR LP-80:** Medición de fPAR e Índice de Área Foliar (LAI).
+- **2 Sensores ThetaProbe ML3:** Humedad volumétrica del suelo por impedancia (100 MHz).
+- **Ollas de Presión de Richards (UNSAAC):** Curvas de retención de humedad (0.1 a 15 bar).
+- **Equipos LASPAF y LENA (UNALM):** Fertilidad química de suelos y análisis bromatológico (proteína, almidón, fibra, energía, Fe, Zn).
+
+## Principios FAIR y Licenciamiento
+
+Los conjuntos de datos validados, perfiles `.SOL`, coeficientes `.CUL/.ECO` y manuales se depositarán en repositorio institucional con **DOI** bajo licencia **CC BY 4.0** (y licencia **MIT** para scripts de código abierto).
+
+- Repositorio del proyecto: <https://github.com/kundun14/enso-andes>
+- Sitio publicado: <https://kundun14.github.io/enso-andes/>

@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>HYDRA-EO Clone | GitHub Pages Prototype</title>
+  <title>ENSO-ANDES | Proyecto PROCIENCIA E041-2027-03</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
@@ -11,19 +11,18 @@
   <header class="navbar">
     <div class="container navbar-inner">
       <a class="brand" href="#top">
-        <img src="./assets/placeholder-logo.svg" alt="Logo del proyecto">
-        <span>HYDRA-EO Clone</span>
+        <img src="./assets/enso-andes-logo.png" alt="Logo ENSO-ANDES">
+        <span>ENSO-ANDES</span>
       </a>
       <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
       <nav id="nav-links" class="nav-links">
-        <a href="#about">About</a>
-        <a href="#mission">Mission</a>
-        <a href="#workpackages">Work Packages</a>
-        <a href="#methods">Methods</a>
-        <a href="#news">News</a>
-        <a href="#consortium">Consortium</a>
-        <a href="#tools">Tools</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">Resumen</a>
+        <a href="#workpackages">Objetivos (WP)</a>
+        <a href="#methods">Metodología</a>
+        <a href="#results">Resultados</a>
+        <a href="#consortium">Consorcio</a>
+        <a href="#tools">Herramientas</a>
+        <a href="#contact">Contacto</a>
         <a href="./docs-quarto/index.html">Docs (Quarto)</a>
       </nav>
     </div>
@@ -32,19 +31,38 @@
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <span class="hero-badge">Prototipo GitHub Pages · kundun14</span>
-        <h1>Clon estructural híbrido para proyectos científicos y de observación</h1>
+        <span class="hero-badge">CONCYTEC – PROCIENCIA · Concurso E041-2027-03 · Modalidad I</span>
+        <h1>Impacto del Fenómeno ENSO en Papa y Maíz en los Andes y la Costa del Perú</h1>
         <p>
-          Plantilla estática de prueba inspirada en la arquitectura de hydra-eo.eu:
-          landing page en HTML/CSS/JS combinada con documentación técnica compilada con Quarto.
+          Proyecto <strong>ENSO-DSSAT-ANDES</strong>: mitigación de riesgos agroclimáticos mediante modelamiento
+          ecofisiológico (DSSAT v4.8), caracterización hidrofísica de suelos (Ollas de Richards) y
+          fenotipado proximal IoT en <strong>K'ayra (Cusco)</strong> y <strong>La Molina (Lima)</strong>.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="./docs-quarto/pipeline.html">Explorar Pipeline (Quarto)</a>
-          <button id="open-domain-modal" class="btn btn-outline" type="button">Ver info de despliegue</button>
+          <button id="open-domain-modal" class="btn btn-outline" type="button">Ficha del Proyecto</button>
         </div>
       </div>
       <div class="hero-visual">
-        <img src="./assets/placeholder-hero.svg" alt="Ilustración placeholder del hero">
+        <img src="./assets/enso-andes-logo.png" alt="Emblema ilustrado ENSO-ANDES">
+        <div class="hero-stats">
+          <div class="hero-stat-item">
+            <strong>24 Meses</strong>
+            <span>Abr 2027 – Mar 2029</span>
+          </div>
+          <div class="hero-stat-item">
+            <strong>44 Años</strong>
+            <span>Serie PISCO v3.0 (1981–2024)</span>
+          </div>
+          <div class="hero-stat-item">
+            <strong>2 Cultivos</strong>
+            <span>Papa (Cusco) &amp; Maíz (Lima)</span>
+          </div>
+          <div class="hero-stat-item">
+            <strong>nRMSE &lt; 15%</strong>
+            <span>Meta de calibración DSSAT</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -52,172 +70,230 @@
   <section id="about">
     <div class="container">
       <div class="section-header">
-        <span class="section-eyebrow">01 · About</span>
-        <h2>Visión general del proyecto</h2>
-        <p>Texto placeholder para describir el propósito del proyecto, objetivos científicos y alcance general.</p>
+        <span class="section-eyebrow">01 · Resumen &amp; Problema</span>
+        <h2>Variabilidad hidroclimática ENSO y seguridad alimentaria</h2>
+        <p>
+          Las fases cálida (El Niño) y fría (La Niña) generan impactos asimétricos: sequías y heladas en la sierra
+          andina (papa) y estrés térmico e hídrico en la costa central (maíz), provocando pérdidas de hasta 50% y
+          deterioro del valor nutricional.
+        </p>
       </div>
       <div class="grid-3">
         <article class="card">
-          <h3>Arquitectura Estática</h3>
-          <p>Carga instantánea sin servidor ni base de datos, alojada gratuitamente en GitHub Pages.</p>
+          <h3>Hidrofísica Experimental</h3>
+          <p>
+            Reemplazo de funciones de pedotransferencia genéricas por curvas pF medidas en Ollas de Richards
+            (0.1 a 15 bar) y ajuste de van Genuchten sobre núcleos inalterados.
+          </p>
         </article>
         <article class="card">
-          <h3>Documentación Quarto</h3>
-          <p>Subpáginas técnicas escritas en Markdown (.qmd) con soporte nativo para diagramas y código.</p>
+          <h3>Fenotipado Proximal IoT</h3>
+          <p>
+            Monitoreo continuo y no destructivo del dosel con 8 fenocámaras ESP32-CAM, ceptómetros AccuPAR LP-80
+            (fPAR/LAI) y sensores de humedad ThetaProbe ML3.
+          </p>
         </article>
         <article class="card">
-          <h3>Rutas Relativas</h3>
-          <p>Configurado para funcionar bajo https://kundun14.github.io/github_page_hydra/ sin rutas rotas.</p>
+          <h3>Simulación Multidecadal</h3>
+          <p>
+            Calibración de SUBSTOR-Potato y CERES-Maize (DSSAT v4.8) acoplados a 44 años de grilla diaria
+            PISCO v3.0 para definir ventanas de siembra y riego óptimo.
+          </p>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="mission" class="section-bg-light">
+  <section id="workpackages" class="section-bg-light">
     <div class="container">
       <div class="section-header">
-        <span class="section-eyebrow">02 · Mission</span>
-        <h2>Misión y objetivos clave</h2>
-        <p>Resumen de los pilares técnicos y científicos que articulan la plataforma.</p>
+        <span class="section-eyebrow">02 · Paquetes de Trabajo por Objetivos</span>
+        <h2>Estructura técnica del proyecto (OE 1, OE 2, OE 3 + Transversal)</h2>
+        <p>Articulación de tres objetivos específicos y un paquete transversal de difusión científica y gestión.</p>
       </div>
       <div class="grid-2">
         <article class="card">
-          <h3>Integración Multi-Sensor</h3>
-          <p>Placeholder para describir la combinación de datos satelitales, UAV y mediciones de campo.</p>
-          <a class="card-link" href="./docs-quarto/timeline.html">Ver cronograma en Quarto →</a>
+          <span class="wp-badge">WP1 · OE 1 · Meses 2–8</span>
+          <h3>Propiedades Hídrico-Edáficas</h3>
+          <ul>
+            <li><strong>Act 1.1 – 1.2:</strong> Muestreo de 40 cilindros Uhland (0–100 cm) en K'ayra y La Molina.</li>
+            <li><strong>Act 1.3:</strong> Curvas pF en Ollas de Richards (0.1–15 bar) en Lab. UNSAAC.</li>
+            <li><strong>Act 1.4:</strong> Caracterización química completa (pH, CE, MO, N, P, K, CIC) en LASPAF-UNALM.</li>
+            <li><strong>Act 1.5:</strong> Ajuste van Genuchten y generación de archivos <code>.SOL</code> para DSSAT.</li>
+          </ul>
+          <a class="card-link" href="./docs-quarto/timeline.html">Ver cronograma WP1 →</a>
         </article>
+
         <article class="card">
-          <h3>Modelado Híbrido</h3>
-          <p>Placeholder para explicar la combinación de modelos físicos y aprendizaje automático.</p>
-          <a class="card-link" href="./docs-quarto/pipeline.html">Ver flujo metodológico →</a>
+          <span class="wp-badge">WP2 · OE 2 · Meses 1–18</span>
+          <h3>Ecofisiología, Fenocámaras y Campo</h3>
+          <ul>
+            <li><strong>Act 2.1 – 2.2:</strong> Ensamblaje con CIP de 8 fenocámaras IoT y parcelas <em>split-plot</em> de 500 m².</li>
+            <li><strong>Act 2.3 – 2.4:</strong> Ensayos de papa (K'ayra) y maíz (La Molina) bajo 2 fechas y 2 riegos; monitoreo GCC, fPAR/LAI y biomasa.</li>
+            <li><strong>Act 2.5:</strong> Análisis nutricional (proteína, almidón, fibra, calorías, Fe, Zn) en LENA-UNALM.</li>
+            <li><strong>Act 2.6:</strong> Sustentación de 2 Tesis de Pregrado.</li>
+          </ul>
+          <a class="card-link" href="./docs-quarto/pipeline.html">Ver flujo experimental →</a>
+        </article>
+
+        <article class="card">
+          <span class="wp-badge">WP3 · OE 3 · Meses 4–24</span>
+          <h3>Modelamiento Retrospectivo ENSO</h3>
+          <ul>
+            <li><strong>Act 3.1:</strong> Estructuración de series climáticas diarias PISCO v3.0 (1981–2024, <code>.WTH</code>).</li>
+            <li><strong>Act 3.2:</strong> Calibración genética GLUE de SUBSTOR-Potato y CERES-Maize (nRMSE &lt; 15%, d &gt; 0.85).</li>
+            <li><strong>Act 3.3 – 3.4:</strong> Simulaciones de 44 años (El Niño/La Niña/Neutro), ANOVA y ventanas óptimas.</li>
+            <li><strong>Act 3.5:</strong> Sustentación de 1 Tesis de Maestría (UNSAAC).</li>
+          </ul>
+          <a class="card-link" href="./docs-quarto/timeline.html">Ver hitos WP3 →</a>
+        </article>
+
+        <article class="card">
+          <span class="wp-badge">WP4 · Transversal · Meses 1–24</span>
+          <h3>Difusión Científica, Transferencia y Gestión</h3>
+          <ul>
+            <li><strong>Act 4.1 – 4.2:</strong> 2 artículos científicos en revistas Scopus Q1/Q2 en acceso abierto.</li>
+            <li><strong>Act 4.3:</strong> Talleres participativos en Cusco y Lima, días de campo y clubes de ciencias escolares.</li>
+            <li><strong>Act 5.1 – 5.2:</strong> Gestión físico-financiera ante PROCIENCIA y depósito en repositorio FAIR con DOI.</li>
+          </ul>
+          <a class="card-link" href="./docs-quarto/news.html">Ver entregables y noticias →</a>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="workpackages">
+  <section id="methods">
     <div class="container">
       <div class="section-header">
-        <span class="section-eyebrow">03 · Work Packages</span>
-        <h2>Paquetes de trabajo</h2>
-        <p>Estructura modular de ejemplo para presentar fases o grupos de tareas.</p>
+        <span class="section-eyebrow">03 · Metodología</span>
+        <h2>Diseño biofísico acoplado Costa – Sierra</h2>
+        <p>
+          Integración de mediciones de laboratorio, sensórica proximal en parcela y modelamiento mecanístico regional.
+        </p>
       </div>
       <div class="grid-3">
         <article class="card">
-          <h3>WP1 · Adquisición</h3>
-          <p>Campañas de muestreo y estandarización de datos de entrada.</p>
+          <h3>Sitios y Cultivares</h3>
+          <p>
+            <strong>Sierra (K'ayra, Cusco · 3,219 msnm):</strong> Papa cv. <em>Canchán</em> y <em>Yungay</em>.<br>
+            <strong>Costa (La Molina, Lima · 240 msnm):</strong> Maíz amarillo duro cv. <em>Marginal 28T</em>.
+          </p>
         </article>
         <article class="card">
-          <h3>WP2 · Modelado</h3>
-          <p>Entrenamiento, calibración y validación cruzada de algoritmos.</p>
+          <h3>Instrumentación en Campo</h3>
+          <p>
+            8 fenocámaras IoT (ESP32-CAM, registro 3 veces/día), 2 ceptómetros AccuPAR LP-80 (PAR/LAI),
+            2 sensores FDR ThetaProbe ML3 y estaciones meteorológicas automáticas.
+          </p>
         </article>
         <article class="card">
-          <h3>WP3 · Validación</h3>
-          <p>Evaluación operativa y publicación de productos abiertos.</p>
+          <h3>Estandarización y Calidad</h3>
+          <p>
+            Protocolos ICASA/DSSAT, escala fenológica BBCH, métodos AOAC en LENA, análisis en R/Python y
+            control estadístico con RMSE, nRMSE e índice de Willmott (<em>d</em>).
+          </p>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="methods" class="section-bg-light">
+  <section id="results" class="section-bg-light">
     <div class="container">
       <div class="section-header">
-        <span class="section-eyebrow">04 · Methods</span>
-        <h2>Metodología y flujo de datos</h2>
-        <p>Diagrama placeholder que ilustra las etapas principales de procesamiento.</p>
-      </div>
-      <div class="card">
-        <img src="./assets/placeholder-diagram.svg" alt="Diagrama placeholder del pipeline">
-      </div>
-    </div>
-  </section>
-
-  <section id="news">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-eyebrow">05 · News</span>
-        <h2>Noticias y actualizaciones</h2>
-        <p>Entradas de ejemplo enlazadas al índice de noticias generado con Quarto.</p>
+        <span class="section-eyebrow">04 · Resultados Científicos Esperados</span>
+        <h2>Contrastación de hipótesis y productos abiertos</h2>
+        <p>Evidencia cuantitativa orientada a productores, juntas de usuarios, INIA, SENAMHI y ENFEN.</p>
       </div>
       <div class="grid-2">
         <article class="card">
-          <h3>Lanzamiento del prototipo en GitHub Pages</h3>
-          <p>Ejemplo de nota breve con enlace a la documentación completa.</p>
-          <a class="card-link" href="./docs-quarto/news.html">Leer más en Quarto →</a>
+          <h3>1. Base Abierta DSSAT v4.8 (.SOL, .CUL, .ECO)</h3>
+          <p>
+            Primeros perfiles hidrofísicos medidos en Ollas de Richards y coeficientes genéticos validados in situ
+            para papa Canchán y maíz Marginal 28T, con ahorro hídrico estimado de 20%–30% por umbral de agotamiento.
+          </p>
         </article>
         <article class="card">
-          <h3>Campaña de pruebas 2026</h3>
-          <p>Placeholder para publicar resultados preliminares, eventos o congresos.</p>
-          <a class="card-link" href="./docs-quarto/news.html">Ir al archivo de noticias →</a>
+          <h3>2. Matriz Operativa de Riesgo Agroclimático</h3>
+          <p>
+            Guía de decisión vinculada a alertas ENFEN/SENAMHI con ventanas óptimas de siembra (±15–30 días),
+            riego deficitario controlado y proyección de reducción de pérdidas de cosecha del 20%–35%.
+          </p>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="consortium" class="section-bg-light">
+  <section id="consortium">
     <div class="container">
       <div class="section-header">
-        <span class="section-eyebrow">06 · Consortium</span>
-        <h2>Consorcio y colaboradores</h2>
-        <p>Espacio reservado para instituciones socias y equipos participantes.</p>
+        <span class="section-eyebrow">05 · Consorcio &amp; Alianzas</span>
+        <h2>Instituciones participantes</h2>
+        <p>Sinergia interregional entre la costa central y la sierra sur andina del Perú.</p>
       </div>
       <div class="grid-3">
-        <article class="card">
-          <h3>Institución A</h3>
-          <p>Coordinación general y teledetección.</p>
+        <article class="card consortium-card">
+          <img class="consortium-logo" src="./assets/consorcio/molina.jpg" alt="Logo UNALM">
+          <h3>UNALM (Lima)</h3>
+          <p>
+            <strong>Entidad Solicitante.</strong> Conducción del ensayo de maíz en La Molina, análisis químicos en LASPAF,
+            calidad nutricional en LENA, Estación Humboldt y dirección científica.
+          </p>
         </article>
-        <article class="card">
-          <h3>Institución B</h3>
-          <p>Validación en campo y campañas aéreas.</p>
+        <article class="card consortium-card">
+          <img class="consortium-logo" src="./assets/consorcio/unsaac.jpg" alt="Logo UNSAAC">
+          <h3>UNSAAC (Cusco)</h3>
+          <p>
+            <strong>Entidad Asociada.</strong> Conducción del ensayo de papa en K'ayra, curvas pF en Ollas de Richards
+            (Lab. de Riego), tesis de maestría y pregrado en Cusco.
+          </p>
         </article>
-        <article class="card">
-          <h3>Institución C</h3>
-          <p>Infraestructura de datos y herramientas open-source.</p>
-          <a class="card-link" href="./docs-quarto/consortium.html">Ver detalle →</a>
+        <article class="card consortium-card">
+          <img class="consortium-logo" src="./assets/consorcio/cip.jpg" alt="Logo CIP">
+          <h3>CIP (Asesoría Especializada)</h3>
+          <p>
+            <strong>Socio Técnico.</strong> Adaptación de fenocámaras IoT de bajo costo (ESP32-CAM) y estandarización
+            de protocolos de ceptometría (LAI/fPAR).
+          </p>
         </article>
       </div>
+      <p style="margin-top: 1.25rem; text-align: right;">
+        <a class="card-link" href="./docs-quarto/consortium.html">Ver equipo investigador completo →</a>
+      </p>
     </div>
   </section>
 
-  <section id="tools">
+  <section id="tools" class="section-bg-light">
     <div class="container">
       <div class="section-header">
-        <span class="section-eyebrow">07 · Tools</span>
-        <h2>Herramientas y repositorios</h2>
-        <p>Enlaces de ejemplo hacia paquetes, documentación y código abierto.</p>
+        <span class="section-eyebrow">06 · Herramientas &amp; Ciencia Abierta</span>
+        <h2>Ecosistema de software, hardware y datos FAIR</h2>
+        <p>Todos los scripts, protocolos y conjuntos de datos validados se publicarán bajo licencia CC BY 4.0 / MIT.</p>
       </div>
       <div class="grid-2">
         <article class="card">
-          <h3>Suite de Modelos</h3>
-          <p>Repositorio de ejemplo con scripts y guías de uso reproducibles.</p>
-          <a class="card-link" href="./docs-quarto/tools.html">Explorar herramientas →</a>
+          <h3>Modelamiento &amp; Análisis</h3>
+          <p>DSSAT v4.8 (SUBSTOR-Potato, CERES-Maize), R, Python, PISCO v3.0 (SENAMHI) y método GLUE.</p>
+          <a class="card-link" href="./docs-quarto/tools.html">Ver stack técnico →</a>
         </article>
         <article class="card">
-          <h3>Repositorio GitHub</h3>
-          <p>Código fuente del sitio web y workflow de despliegue automático.</p>
-          <a class="card-link" href="https://github.com/kundun14" target="_blank" rel="noopener">Perfil kundun14 →</a>
+          <h3>Repositorio GitHub del Proyecto</h3>
+          <p>Código fuente de la plataforma web, workflow de Quarto y documentación reproducible.</p>
+          <a class="card-link" href="https://github.com/kundun14/enso-andes" target="_blank" rel="noopener">github.com/kundun14/enso-andes →</a>
         </article>
       </div>
-    </div>
-  </section>
 
-  <section id="tutorials" class="section-bg-light">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-eyebrow">08 · Tutorials</span>
-        <h2>Tutoriales interactivos</h2>
-        <p>Ejemplo de panel desplegable controlado con JavaScript vanilla.</p>
-      </div>
-      <button id="toggle-tutorials" class="btn btn-accent" type="button">Mostrar tutoriales</button>
-      <div id="tutorials-content" class="grid-2 tutorials-panel">
-        <article class="card">
-          <h3>Tutorial 1: Configuración inicial</h3>
-          <p>Guía rápida placeholder para ejecutar el entorno de trabajo.</p>
-        </article>
-        <article class="card">
-          <h3>Tutorial 2: Publicación con Quarto</h3>
-          <p>Cómo añadir nuevas páginas `.qmd` dentro de `docs-quarto/`.</p>
-        </article>
+      <div style="margin-top: 1.5rem;">
+        <button id="toggle-tutorials" class="btn btn-accent" type="button">Mostrar guías y protocolos</button>
+        <div id="tutorials-content" class="grid-2 tutorials-panel">
+          <article class="card">
+            <h3>Guía 1: Fenocámaras ESP32-CAM</h3>
+            <p>Planos de montaje, código abierto de captura cenital y ajuste logístico doble de cobertura verde (GCC/ExG).</p>
+          </article>
+          <article class="card">
+            <h3>Guía 2: Parametrización .SOL en DSSAT</h3>
+            <p>Protocolo de muestreo Uhland, curvas de retención en Ollas de Richards y ajuste de van Genuchten.</p>
+          </article>
+        </div>
       </div>
     </div>
   </section>
@@ -225,16 +301,19 @@
   <section id="contact">
     <div class="container">
       <div class="section-header">
-        <span class="section-eyebrow">09 · Contact</span>
-        <h2>Contacto</h2>
-        <p>Sin servidor backend, el contacto directo se gestiona mediante enlace mailto o página informativa.</p>
+        <span class="section-eyebrow">07 · Contacto</span>
+        <h2>Equipo y coordinación</h2>
+        <p>Concurso CONCYTEC–PROCIENCIA E041-2027-03 · UNALM &amp; UNSAAC.</p>
       </div>
       <div class="card">
-        <h3>¿Preguntas sobre el proyecto?</h3>
-        <p>Puedes reemplazar este correo por el de tu equipo o abrir la página de contacto en Quarto.</p>
+        <h3>Contacto Institucional</h3>
+        <p>
+          <strong>Entidad Solicitante:</strong> Universidad Nacional Agraria La Molina (UNALM), Lima.<br>
+          <strong>Entidad Asociada:</strong> Universidad Nacional de San Antonio Abad del Cusco (UNSAAC), Cusco.
+        </p>
         <div class="hero-actions" style="margin-top: 1rem;">
-          <a class="btn btn-accent" href="mailto:contacto@ejemplo.org">Enviar correo (mailto)</a>
-          <a class="card-link" href="./docs-quarto/contact.html" style="margin-top: 0; align-self: center;">Ver página de contacto →</a>
+          <a class="btn btn-accent" href="./docs-quarto/contact.html">Ver directorio del equipo</a>
+          <a class="card-link" href="https://github.com/kundun14/enso-andes" target="_blank" rel="noopener" style="margin-top: 0; align-self: center;">Repositorio en GitHub →</a>
         </div>
       </div>
     </div>
@@ -242,17 +321,19 @@
 
   <footer>
     <div class="container footer-inner">
-      <span>© 2026 HYDRA-EO Clone · Prototipo estático en GitHub Pages</span>
+      <span>© 2026–2029 ENSO-ANDES (ENSO-DSSAT-ANDES) · PROCIENCIA E041-2027-03</span>
       <a href="#top">Volver arriba ↑</a>
     </div>
   </footer>
 
   <div id="domain-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
     <div class="modal-box">
-      <h3 id="modal-title">Despliegue en GitHub Pages</h3>
+      <h3 id="modal-title">Ficha Resumen · ENSO-ANDES</h3>
       <p>
-        Este prototipo está preparado para publicarse en
-        <strong>https://kundun14.github.io/github_page_hydra/</strong> mediante GitHub Actions y Quarto.
+        <strong>Código:</strong> CONCYTEC–PROCIENCIA E041-2027-03 (Modalidad I, Tipo B).<br>
+        <strong>Duración:</strong> 24 meses (01/04/2027 – 31/03/2029).<br>
+        <strong>Presupuesto Total:</strong> S/ 343,240.00 (PROCIENCIA S/ 268,946.00 + contrapartida no monetaria UNALM/UNSAAC).<br>
+        <strong>Sitio Web:</strong> <code>https://kundun14.github.io/enso-andes/</code>
       </p>
       <button id="close-domain-modal" class="btn btn-accent" type="button">Cerrar</button>
     </div>

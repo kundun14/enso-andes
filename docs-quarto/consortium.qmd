@@ -1,9 +1,20 @@
 ---
-title: "Consorcio"
+title: "Consorcio y Equipo Investigador"
 ---
 
-Listado *placeholder* de instituciones y colaboradores:
+## Instituciones Participantes
 
-- **Institución A**: Coordinación técnica.
-- **Institución B**: Campañas de validación.
-- **Institución C**: Infraestructura y datos abiertos.
+1. **Universidad Nacional Agraria La Molina (UNALM)** — *Entidad Solicitante (Lima)*: Conducción del ensayo de maíz en La Molina, análisis en LASPAF y LENA, registros de la Estación Meteorológica Alexander von Humboldt y dirección científica.
+2. **Universidad Nacional de San Antonio Abad del Cusco (UNSAAC)** — *Entidad Asociada (Cusco)*: Conducción del ensayo de papa en el Centro Experimental K'ayra, ensayos de hidrofísica en Ollas de Richards y formación de posgrado y pregrado.
+3. **Centro Internacional de la Papa (CIP)** — *Asesoría Especializada*: Adaptación de fenocámaras IoT de bajo costo y protocolos de medición de LAI y fPAR.
+
+## Equipo Técnico Principal
+
+| Rol | Investigador / Tesista | Institución |
+| :--- | :--- | :--- |
+| Responsable Técnico / PI | Dra. Marilyn Aurora Buendía Molina | UNALM |
+| Co-Investigador | Dr. Carlos Jesús Baca García | UNSAAC |
+| Co-Investigador | Dr. Hildo Mac Lean Loayza Loza | UNALM |
+| Tesista de Posgrado (Maestría) | Ing. Marcelo Bueno Dueñas | UNSAAC |
+| Tesista de Pregrado (Cusco) | Alva Lucero Garcés Valenzuela | UNSAAC |
+| Gestor de Proyectos | Irwin Fernando Zelada Zuñiga | UNALM |

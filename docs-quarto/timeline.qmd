@@ -1,9 +1,25 @@
 ---
-title: "Cronograma (Timeline)"
+title: "Cronograma y Paquetes de Trabajo (24 Meses)"
 ---
 
-| Fase | Descripción (Placeholder) | Estado |
-| :--- | :--- | :--- |
-| M1 - M6 | Diseño de arquitectura y adquisición de datos | Completado |
-| M7 - M12 | Desarrollo de modelos híbridos | En progreso |
-| M13 - M18 | Validación y publicación abierta | Planificado |
+**Periodo de ejecución:** 24 meses (`01/04/2027 – 31/03/2029`) · **Modalidad:** Proyectos de Investigación Avanzados Modalidad I (PROCIENCIA E041-2027-03).
+
+## Matriz de Actividades por Objetivo Específico
+
+| Cód. | Paquete / Actividad | Periodo | Responsable | Hito Verificable |
+| :--- | :--- | :--- | :--- | :--- |
+| **Act 1.1–1.2** | Muestreo Uhland (K'ayra y La Molina) y transporte de muestras | Mes 2 – 3 | Dr. Carlos Baca / Tesistas | 40 cilindros inalterados acondicionados |
+| **Act 1.3** | Curvas pF en Ollas de Richards (0.1–15 bar) | Mes 3 – 6 | Dr. Carlos Baca / Lab UNSAAC | Curvas de retención experimentales |
+| **Act 1.4** | Análisis químico completo en LASPAF | Mes 4 – 6 | Lab LASPAF / PI | Reportes oficiales de fertilidad |
+| **Act 1.5** | Ajuste van Genuchten y perfiles `.SOL` | Mes 6 – 8 | Tesista Posgrado / Dr. Baca | Archivos `.SOL` calibrados |
+| **Act 2.1** | Consultoría CIP: ensamblaje de 8 fenocámaras IoT | Mes 1 | Dr. Hildo Loayza / CIP | 8 fenocámaras calibradas |
+| **Act 2.2** | Habilitación de parcelas 500 m² y riego por goteo | Mes 4 – 5 | Tesistas de Pregrado | Parcelas operativas |
+| **Act 2.3–2.4** | Ensayos de papa y maíz + monitoreo fPAR/LAI/GCC | Mes 6 – 12 | Tesistas de Pregrado | Bases continuas de fenología y biomasa |
+| **Act 2.5** | Cosecha y análisis nutricional en LENA-UNALM | Mes 11 – 12 | Tesistas / LENA-UNALM | Rendimiento y calidad bromatológica |
+| **Act 2.6** | Procesamiento y sustentación de 2 Tesis de Pregrado | Mes 13 – 18 | Tesistas / Asesores | 02 Tesis de Pregrado aprobadas |
+| **Act 3.1** | Series agroclimáticas PISCO v3.0 (1981–2024, `.WTH`) | Mes 4 – 6 | Tesista Posgrado (UNSAAC) | Archivos `.WTH` multidecadales |
+| **Act 3.2** | Calibración genética SUBSTOR & CERES en DSSAT | Mes 12 – 15 | Tesista Posgrado / PI | nRMSE < 15% y d > 0.85 |
+| **Act 3.3–3.4** | Simulaciones 44 años ENSO, ANOVA y ventanas óptimas | Mes 16 – 21 | Tesista Posgrado / Dr. Baca | Matriz de riesgo y guía operativa |
+| **Act 3.5** | Redacción y sustentación de Tesis de Maestría | Mes 21 – 24 | Tesista Posgrado | 01 Tesis de Maestría sustentada |
+| **Act 4.1–4.3** | 2 artículos Scopus Q1/Q2 y talleres Cusco/Lima | Mes 14 – 23 | Equipo completo | Artículos sometidos y talleres |
+| **Act 5.1–5.2** | Gestión técnica-financiera y rendiciones PROCIENCIA | Mes 1 – 24 | Gestor / PI | 4 informes semestrales + Informe Final |

@@ -2,7 +2,13 @@
 title: "Contacto"
 ---
 
-Para consultas sobre este prototipo:
+## Coordinación del Proyecto ENSO-ANDES
 
-- Correo de ejemplo: [contacto@ejemplo.org](mailto:contacto@ejemplo.org)
-- GitHub: <https://github.com/kundun14>
+- **Entidad Solicitante:** Universidad Nacional Agraria La Molina (UNALM), Av. La Molina s/n, Lima, Perú.
+- **Entidad Asociada:** Universidad Nacional de San Antonio Abad del Cusco (UNSAAC), Cusco, Perú.
+- **Concurso:** CONCYTEC–PROCIENCIA E041-2027-03 (*Proyectos de Investigación Aplicada a Prioridades*).
+
+## Enlaces
+
+- Repositorio GitHub: <https://github.com/kundun14/enso-andes>
+- Página Principal: [Volver al inicio](../index.html)

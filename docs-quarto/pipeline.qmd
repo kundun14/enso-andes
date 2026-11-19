@@ -1,14 +1,31 @@
 ---
-title: "Pipeline Metodológico"
+title: "Metodología y Pipeline Biofísico"
 ---
 
-Ejemplo de página técnica generada por Quarto con un diagrama Mermaid integrado:
+La investigación adopta un diseño cuantitativo, experimental y biofísico acoplado entre la sierra andina (**Centro Experimental K'ayra, Cusco · 3,219 msnm**) y la costa central (**Campus UNALM, La Molina, Lima · 240 msnm**).
 
 ```{mermaid}
 flowchart LR
-  A[Datos de Entrada] --> B[Preprocesamiento]
-  B --> C[Modelo Híbrido]
-  C --> D[Productos Finales]
+  A["OE 1: Hidrofísica y Fertilidad<br/>Cilindros Uhland + Ollas de Richards<br/>van Genuchten (.SOL) + LASPAF"] --> C["OE 3: Modelamiento DSSAT v4.8<br/>SUBSTOR-Potato & CERES-Maize<br/>Calibración GLUE (nRMSE < 15%)"]
+  B["OE 2: Campo y Fenotipado IoT<br/>Parcelas 500 m² (Split-Plot)<br/>ESP32-CAM + AccuPAR LP-80 + ThetaProbe + LENA"] --> C
+  D["Serie Climática PISCO v3.0<br/>1981–2024 (.WTH) + Índices ONI / ICEN"] --> C
+  C --> E["Productos Abiertos<br/>Matriz de Riesgo Agroclimático<br/>Ventanas de Siembra & Riego Óptimo"]
 ```
 
-Puedes editar `docs-quarto/pipeline.qmd` para añadir bloques de código en Python o R, fórmulas LaTeX o tablas.
+## Componentes por Objetivo Específico
+
+### OE 1: Propiedades Hídrico-Edáficas
+- Muestreo de 40 núcleos inalterados (cilindros Uhland de 100 cm³) en cuatro profundidades (0–20, 20–40, 40–60 y 60–100 cm).
+- Determinación experimental de curvas de retención pF (0.1, 0.33, 1, 5 y 15 bar) en Ollas de presión de Richards (UNSAAC).
+- Caracterización química completa en **LASPAF-UNALM** (pH, CE, MO, N, P, K, CIC).
+- Ajuste numérico a la ecuación de **van Genuchten** y generación de perfiles `.SOL` para DSSAT v4.8.
+
+### OE 2: Ecofisiología, Fenocámaras y Campo
+- Ensayos en parcelas divididas (*split-plot*, 4 repeticiones, 500 m²) en **papa** (*cv. Canchán, Yungay* en K'ayra) y **maíz** (*cv. Marginal 28T* en La Molina), bajo fechas de siembra y regímenes hídricos contrastantes (control vs. déficit).
+- Monitoreo continuo con 8 fenocámaras IoT (**ESP32-CAM**, 3 capturas/día, ajuste logístico doble GCC/ExG), ceptometría semanal (**AccuPAR LP-80** para fPAR/LAI), humedad edáfica (**ThetaProbe ML3**) y muestreos destructivos quincenales.
+- Evaluación bromatológica y nutricional en **LENA-UNALM**: materia seca, almidón, proteína cruda, fibra, energía, hierro y zinc.
+
+### OE 3: Simulación Multidecadal ENSO (1981–2024)
+- Estructuración de series diarias **PISCO v3.0** (SENAMHI, ~5 km) en formato `.WTH`, categorizadas según **ONI (Niño 3.4)** e **ICEN (Niño 1+2)**.
+- Calibración genética con el método **GLUE** y validación estadística (RMSE, nRMSE < 15%, índice de Willmott *d* > 0.85).
+- Simulaciones combinatorias (fechas de siembra × suelo × régimen hídrico) y análisis de varianza (ANOVA) para delimitar ventanas de mínimo riesgo.

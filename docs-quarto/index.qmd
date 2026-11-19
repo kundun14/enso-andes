@@ -1,11 +1,14 @@
 ---
-title: "Documentación del Proyecto"
+title: "Documentación Técnica · ENSO-ANDES"
 ---
 
-Bienvenido al subsitio de documentación generado con **Quarto**.
+Bienvenido a la documentación del proyecto **ENSO-DSSAT-ANDES**: *Evaluación del impacto del fenómeno El Niño-Oscilación del Sur (ENSO) en la productividad de los cultivos de papa y maíz. Mitigación de riesgos agroclimáticos mediante modelamiento ecofisiológico y manejo hídrico-edáfico en dos localidades del Perú* (Concurso **CONCYTEC–PROCIENCIA E041-2027-03**, Modalidad I).
 
-Esta sección replica la carpeta `docs-quarto/` del sitio original, permitiendo escribir documentación técnica, tablas, ecuaciones y diagramas directamente en Markdown (`.qmd`).
+## Navegación rápida
 
-- [Volver a la landing principal](../index.html)
-- [Explorar Pipeline](pipeline.qmd)
-- [Ver Timeline](timeline.qmd)
+- [Volver a la página principal](../index.html)
+- [Metodología y Pipeline (OE 1 – OE 3)](pipeline.qmd)
+- [Cronograma de 24 meses y Paquetes de Trabajo](timeline.qmd)
+- [Resultados Científicos Esperados](news.qmd)
+- [Herramientas, Sensores y Ciencia Abierta](tools.qmd)
+- [Consorcio y Equipo Investigador](consortium.qmd)

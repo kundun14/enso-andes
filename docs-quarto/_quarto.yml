@@ -3,7 +3,7 @@ project:
   output-dir: ../_site/docs-quarto
 
 website:
-  title: "HYDRA-EO Clone Docs"
+  title: "ENSO-ANDES Docs"
   navbar:
     background: "#003f7d"
     foreground: "#ffffff"
@@ -13,17 +13,17 @@ website:
       - href: index.qmd
         text: "Docs"
       - href: pipeline.qmd
-        text: "Pipeline"
+        text: "Metodología"
       - href: timeline.qmd
-        text: "Timeline"
+        text: "Cronograma"
       - href: news.qmd
-        text: "News"
+        text: "Resultados"
       - href: tools.qmd
-        text: "Tools"
+        text: "Herramientas"
       - href: consortium.qmd
-        text: "Consortium"
+        text: "Consorcio"
       - href: contact.qmd
-        text: "Contact"
+        text: "Contacto"
 
 format:
   html:
