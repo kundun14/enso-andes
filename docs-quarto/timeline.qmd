@@ -1,0 +1,9 @@
+---
+title: "Cronograma (Timeline)"
+---
+
+| Fase | Descripción (Placeholder) | Estado |
+| :--- | :--- | :--- |
+| M1 - M6 | Diseño de arquitectura y adquisición de datos | Completado |
+| M7 - M12 | Desarrollo de modelos híbridos | En progreso |
+| M13 - M18 | Validación y publicación abierta | Planificado |

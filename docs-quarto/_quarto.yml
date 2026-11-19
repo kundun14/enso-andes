@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: ../_site/docs-quarto
+
+website:
+  title: "HYDRA-EO Clone Docs"
+  navbar:
+    background: "#003f7d"
+    foreground: "#ffffff"
+    left:
+      - text: "Inicio Landing"
+        href: ../index.html
+      - href: index.qmd
+        text: "Docs"
+      - href: pipeline.qmd
+        text: "Pipeline"
+      - href: timeline.qmd
+        text: "Timeline"
+      - href: news.qmd
+        text: "News"
+      - href: tools.qmd
+        text: "Tools"
+      - href: consortium.qmd
+        text: "Consortium"
+      - href: contact.qmd
+        text: "Contact"
+
+format:
+  html:
+    theme: cosmo
+    toc: true

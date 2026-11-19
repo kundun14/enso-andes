@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>HYDRA-EO Clone | GitHub Pages Prototype</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body id="top">
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a class="brand" href="#top">
+        <img src="./assets/placeholder-logo.svg" alt="Logo del proyecto">
+        <span>HYDRA-EO Clone</span>
+      </a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav id="nav-links" class="nav-links">
+        <a href="#about">About</a>
+        <a href="#mission">Mission</a>
+        <a href="#workpackages">Work Packages</a>
+        <a href="#methods">Methods</a>
+        <a href="#news">News</a>
+        <a href="#consortium">Consortium</a>
+        <a href="#tools">Tools</a>
+        <a href="#contact">Contact</a>
+        <a href="./docs-quarto/index.html">Docs (Quarto)</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="hero-badge">Prototipo GitHub Pages · kundun14</span>
+        <h1>Clon estructural híbrido para proyectos científicos y de observación</h1>
+        <p>
+          Plantilla estática de prueba inspirada en la arquitectura de hydra-eo.eu:
+          landing page en HTML/CSS/JS combinada con documentación técnica compilada con Quarto.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="./docs-quarto/pipeline.html">Explorar Pipeline (Quarto)</a>
+          <button id="open-domain-modal" class="btn btn-outline" type="button">Ver info de despliegue</button>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="./assets/placeholder-hero.svg" alt="Ilustración placeholder del hero">
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">01 · About</span>
+        <h2>Visión general del proyecto</h2>
+        <p>Texto placeholder para describir el propósito del proyecto, objetivos científicos y alcance general.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Arquitectura Estática</h3>
+          <p>Carga instantánea sin servidor ni base de datos, alojada gratuitamente en GitHub Pages.</p>
+        </article>
+        <article class="card">
+          <h3>Documentación Quarto</h3>
+          <p>Subpáginas técnicas escritas en Markdown (.qmd) con soporte nativo para diagramas y código.</p>
+        </article>
+        <article class="card">
+          <h3>Rutas Relativas</h3>
+          <p>Configurado para funcionar bajo https://kundun14.github.io/github_page_hydra/ sin rutas rotas.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="mission" class="section-bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">02 · Mission</span>
+        <h2>Misión y objetivos clave</h2>
+        <p>Resumen de los pilares técnicos y científicos que articulan la plataforma.</p>
+      </div>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Integración Multi-Sensor</h3>
+          <p>Placeholder para describir la combinación de datos satelitales, UAV y mediciones de campo.</p>
+          <a class="card-link" href="./docs-quarto/timeline.html">Ver cronograma en Quarto →</a>
+        </article>
+        <article class="card">
+          <h3>Modelado Híbrido</h3>
+          <p>Placeholder para explicar la combinación de modelos físicos y aprendizaje automático.</p>
+          <a class="card-link" href="./docs-quarto/pipeline.html">Ver flujo metodológico →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="workpackages">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">03 · Work Packages</span>
+        <h2>Paquetes de trabajo</h2>
+        <p>Estructura modular de ejemplo para presentar fases o grupos de tareas.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <h3>WP1 · Adquisición</h3>
+          <p>Campañas de muestreo y estandarización de datos de entrada.</p>
+        </article>
+        <article class="card">
+          <h3>WP2 · Modelado</h3>
+          <p>Entrenamiento, calibración y validación cruzada de algoritmos.</p>
+        </article>
+        <article class="card">
+          <h3>WP3 · Validación</h3>
+          <p>Evaluación operativa y publicación de productos abiertos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="methods" class="section-bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">04 · Methods</span>
+        <h2>Metodología y flujo de datos</h2>
+        <p>Diagrama placeholder que ilustra las etapas principales de procesamiento.</p>
+      </div>
+      <div class="card">
+        <img src="./assets/placeholder-diagram.svg" alt="Diagrama placeholder del pipeline">
+      </div>
+    </div>
+  </section>
+
+  <section id="news">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">05 · News</span>
+        <h2>Noticias y actualizaciones</h2>
+        <p>Entradas de ejemplo enlazadas al índice de noticias generado con Quarto.</p>
+      </div>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Lanzamiento del prototipo en GitHub Pages</h3>
+          <p>Ejemplo de nota breve con enlace a la documentación completa.</p>
+          <a class="card-link" href="./docs-quarto/news.html">Leer más en Quarto →</a>
+        </article>
+        <article class="card">
+          <h3>Campaña de pruebas 2026</h3>
+          <p>Placeholder para publicar resultados preliminares, eventos o congresos.</p>
+          <a class="card-link" href="./docs-quarto/news.html">Ir al archivo de noticias →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="consortium" class="section-bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">06 · Consortium</span>
+        <h2>Consorcio y colaboradores</h2>
+        <p>Espacio reservado para instituciones socias y equipos participantes.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Institución A</h3>
+          <p>Coordinación general y teledetección.</p>
+        </article>
+        <article class="card">
+          <h3>Institución B</h3>
+          <p>Validación en campo y campañas aéreas.</p>
+        </article>
+        <article class="card">
+          <h3>Institución C</h3>
+          <p>Infraestructura de datos y herramientas open-source.</p>
+          <a class="card-link" href="./docs-quarto/consortium.html">Ver detalle →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">07 · Tools</span>
+        <h2>Herramientas y repositorios</h2>
+        <p>Enlaces de ejemplo hacia paquetes, documentación y código abierto.</p>
+      </div>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Suite de Modelos</h3>
+          <p>Repositorio de ejemplo con scripts y guías de uso reproducibles.</p>
+          <a class="card-link" href="./docs-quarto/tools.html">Explorar herramientas →</a>
+        </article>
+        <article class="card">
+          <h3>Repositorio GitHub</h3>
+          <p>Código fuente del sitio web y workflow de despliegue automático.</p>
+          <a class="card-link" href="https://github.com/kundun14" target="_blank" rel="noopener">Perfil kundun14 →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="tutorials" class="section-bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">08 · Tutorials</span>
+        <h2>Tutoriales interactivos</h2>
+        <p>Ejemplo de panel desplegable controlado con JavaScript vanilla.</p>
+      </div>
+      <button id="toggle-tutorials" class="btn btn-accent" type="button">Mostrar tutoriales</button>
+      <div id="tutorials-content" class="grid-2 tutorials-panel">
+        <article class="card">
+          <h3>Tutorial 1: Configuración inicial</h3>
+          <p>Guía rápida placeholder para ejecutar el entorno de trabajo.</p>
+        </article>
+        <article class="card">
+          <h3>Tutorial 2: Publicación con Quarto</h3>
+          <p>Cómo añadir nuevas páginas `.qmd` dentro de `docs-quarto/`.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">09 · Contact</span>
+        <h2>Contacto</h2>
+        <p>Sin servidor backend, el contacto directo se gestiona mediante enlace mailto o página informativa.</p>
+      </div>
+      <div class="card">
+        <h3>¿Preguntas sobre el proyecto?</h3>
+        <p>Puedes reemplazar este correo por el de tu equipo o abrir la página de contacto en Quarto.</p>
+        <div class="hero-actions" style="margin-top: 1rem;">
+          <a class="btn btn-accent" href="mailto:contacto@ejemplo.org">Enviar correo (mailto)</a>
+          <a class="card-link" href="./docs-quarto/contact.html" style="margin-top: 0; align-self: center;">Ver página de contacto →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 HYDRA-EO Clone · Prototipo estático en GitHub Pages</span>
+      <a href="#top">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <div id="domain-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <h3 id="modal-title">Despliegue en GitHub Pages</h3>
+      <p>
+        Este prototipo está preparado para publicarse en
+        <strong>https://kundun14.github.io/github_page_hydra/</strong> mediante GitHub Actions y Quarto.
+      </p>
+      <button id="close-domain-modal" class="btn btn-accent" type="button">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

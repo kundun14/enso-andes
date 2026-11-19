@@ -1,0 +1,8 @@
+---
+title: "Contacto"
+---
+
+Para consultas sobre este prototipo:
+
+- Correo de ejemplo: [contacto@ejemplo.org](mailto:contacto@ejemplo.org)
+- GitHub: <https://github.com/kundun14>

@@ -1,0 +1,9 @@
+---
+title: "Consorcio"
+---
+
+Listado *placeholder* de instituciones y colaboradores:
+
+- **Institución A**: Coordinación técnica.
+- **Institución B**: Campañas de validación.
+- **Institución C**: Infraestructura y datos abiertos.

@@ -1,0 +1,11 @@
+---
+title: "Noticias"
+---
+
+## Prototipo inicial en GitHub Pages
+
+Se ha configurado la estructura base híbrida (HTML + Quarto + GitHub Actions) para `kundun14`.
+
+## Próximos pasos
+
+Añadir contenido real, imágenes optimizadas en `assets/` y artículos individuales dentro de `docs-quarto/`.

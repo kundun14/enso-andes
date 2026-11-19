@@ -1,0 +1,14 @@
+---
+title: "Pipeline Metodológico"
+---
+
+Ejemplo de página técnica generada por Quarto con un diagrama Mermaid integrado:
+
+```{mermaid}
+flowchart LR
+  A[Datos de Entrada] --> B[Preprocesamiento]
+  B --> C[Modelo Híbrido]
+  C --> D[Productos Finales]
+```
+
+Puedes editar `docs-quarto/pipeline.qmd` para añadir bloques de código en Python o R, fórmulas LaTeX o tablas.

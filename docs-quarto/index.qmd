@@ -1,0 +1,11 @@
+---
+title: "Documentación del Proyecto"
+---
+
+Bienvenido al subsitio de documentación generado con **Quarto**.
+
+Esta sección replica la carpeta `docs-quarto/` del sitio original, permitiendo escribir documentación técnica, tablas, ecuaciones y diagramas directamente en Markdown (`.qmd`).
+
+- [Volver a la landing principal](../index.html)
+- [Explorar Pipeline](pipeline.qmd)
+- [Ver Timeline](timeline.qmd)

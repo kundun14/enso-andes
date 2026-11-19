@@ -1,0 +1,14 @@
+---
+title: "Herramientas y Tutoriales"
+---
+
+## Repositorios de ejemplo
+
+- Código fuente del sitio: <https://github.com/kundun14>
+- Sitio publicado (una vez desplegado): <https://kundun14.github.io/github_page_hydra/>
+
+## Tutoriales {#tutorials}
+
+1. Editar textos en `index.html` o en los archivos `.qmd`.
+2. Hacer `git push` a la rama `main`.
+3. Verificar la ejecución en **GitHub Actions**.
