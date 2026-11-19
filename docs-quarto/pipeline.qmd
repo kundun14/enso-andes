@@ -4,28 +4,32 @@ title: "Metodología y Pipeline Biofísico"
 
 La investigación adopta un diseño cuantitativo, experimental y biofísico acoplado entre la sierra andina (**Centro Experimental K'ayra, Cusco · 3,219 msnm**) y la costa central (**Campus UNALM, La Molina, Lima · 240 msnm**).
 
-```{mermaid}
-flowchart LR
-  A["OE 1: Hidrofísica y Fertilidad<br/>Cilindros Uhland + Ollas de Richards<br/>van Genuchten (.SOL) + LASPAF"] --> C["OE 3: Modelamiento DSSAT v4.8<br/>SUBSTOR-Potato & CERES-Maize<br/>Calibración GLUE (nRMSE < 15%)"]
-  B["OE 2: Campo y Fenotipado IoT<br/>Parcelas 500 m² (Split-Plot)<br/>ESP32-CAM + AccuPAR LP-80 + ThetaProbe + LENA"] --> C
-  D["Serie Climática PISCO v3.0<br/>1981–2024 (.WTH) + Índices ONI / ICEN"] --> C
-  C --> E["Productos Abiertos<br/>Matriz de Riesgo Agroclimático<br/>Ventanas de Siembra & Riego Óptimo"]
-```
+![Diagrama de flujo metodológico general (OE 1, OE 2 y OE 3)](../assets/figures/fig1_flujo_general.png)
 
-## Componentes por Objetivo Específico
+## OE 1: Caracterización Hídrico-Edáfica Experimental
 
-### OE 1: Propiedades Hídrico-Edáficas
-- Muestreo de 40 núcleos inalterados (cilindros Uhland de 100 cm³) en cuatro profundidades (0–20, 20–40, 40–60 y 60–100 cm).
-- Determinación experimental de curvas de retención pF (0.1, 0.33, 1, 5 y 15 bar) en Ollas de presión de Richards (UNSAAC).
-- Caracterización química completa en **LASPAF-UNALM** (pH, CE, MO, N, P, K, CIC).
-- Ajuste numérico a la ecuación de **van Genuchten** y generación de perfiles `.SOL` para DSSAT v4.8.
+- **Muestreo estratigráfico:** Calicatas de 1.5 × 1.5 × 1.2 m y extracción de cilindros Uhland (100 cm³) en tres profundidades (0–20, 20–40 y 40–60 cm) por cuadruplicado.
+- **Curvas pF en Ollas de Richards (UNSAAC):** Saturación capilar de 48 h y presiones de 0.10, 0.33, 1.0, 3.0, 5.0 y 15.0 bar (Modelos 1600 y 1500).
+- **Fertilidad LASPAF-UNALM:** Granulometría Bouyoucos, densidad aparente, materia orgánica (Walkley-Black), pH, CE, CIC, P (Olsen) y K.
+- **Ajuste van Genuchten:** Optimización Levenberg-Marquardt para derivar `SAT`, `DUL` y `LL` directos en archivos `.SOL`.
 
-### OE 2: Ecofisiología, Fenocámaras y Campo
-- Ensayos en parcelas divididas (*split-plot*, 4 repeticiones, 500 m²) en **papa** (*cv. Canchán, Yungay* en K'ayra) y **maíz** (*cv. Marginal 28T* en La Molina), bajo fechas de siembra y regímenes hídricos contrastantes (control vs. déficit).
-- Monitoreo continuo con 8 fenocámaras IoT (**ESP32-CAM**, 3 capturas/día, ajuste logístico doble GCC/ExG), ceptometría semanal (**AccuPAR LP-80** para fPAR/LAI), humedad edáfica (**ThetaProbe ML3**) y muestreos destructivos quincenales.
-- Evaluación bromatológica y nutricional en **LENA-UNALM**: materia seca, almidón, proteína cruda, fibra, energía, hierro y zinc.
+![Flujo de caracterización física, química e hidrodinámica del suelo](../assets/figures/fig2_flujo_suelo.png)
 
-### OE 3: Simulación Multidecadal ENSO (1981–2024)
-- Estructuración de series diarias **PISCO v3.0** (SENAMHI, ~5 km) en formato `.WTH`, categorizadas según **ONI (Niño 3.4)** e **ICEN (Niño 1+2)**.
-- Calibración genética con el método **GLUE** y validación estadística (RMSE, nRMSE < 15%, índice de Willmott *d* > 0.85).
-- Simulaciones combinatorias (fechas de siembra × suelo × régimen hídrico) y análisis de varianza (ANOVA) para delimitar ventanas de mínimo riesgo.
+![Curva característica de retención de humedad van Genuchten](../assets/figures/fig3_curva_retencion.png)
+
+## OE 2: Experimentación Split-Plot, Fenocámaras IoT y LENA
+
+- **Diseño experimental:** 4 bloques completos al azar en parcelas divididas (*split-plot*), 2 regímenes hídricos (`R1` óptimo vs. `R2` déficit controlado por depleción MAD 50–60% AD) y 3 fechas de siembra semanales (`D1, D2, D3`): 24 sub-parcelas por localidad.
+- **Fenotipado proximal continuo:** 8 fenocámaras IoT (`ESP32-CAM`, 1.5 m en papa y 2.5 m en maíz, inclinación 60°), cálculo de `GCC` y ajuste logístico doble (`SOS`, `SD`, `POP`, `EOS`, `DD`).
+- **Ceptometría y humedad:** `AccuPAR LP-80` (`fPAR`/`LAI`), sensor puntual `ThetaProbe ML3` (0–20 y 20–40 cm), muestreos destructivos quincenales y análisis bromatológico en `LENA-UNALM`.
+
+![Croquis del diseño experimental en parcelas divididas (Split-Plot)](../assets/figures/fig4_split_plot.png)
+
+![Metodología de seguimiento fenológico proximal con fenocámaras](../assets/figures/fig5_fenocamaras_gcc.png)
+
+## OE 3: Modelamiento Regional DSSAT v4.8 y Análisis ENSO
+
+- **Entradas:** Series diarias **PISCO v3.0** (1981–2024, `.WTH`), suelos regionales (`AllpaDB`, `INIA`, `SoilGrids 2.0`) y coeficientes calibrados (`SUBSTOR-Potato` y `CERES-Maize`).
+- **Clasificación y estadística:** Índice `ONI_agr` (SON–DJF), ANOVA multifactorial (Fase ENSO × Riego × Fecha de Siembra) y pruebas Tukey/Duncan (`α = 0.05`).
+
+![Diagrama de flujo computacional de DSSAT v4.8](../assets/figures/fig6_dssat_flow.png)

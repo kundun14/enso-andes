@@ -4,7 +4,9 @@ title: "Cronograma y Paquetes de Trabajo (24 Meses)"
 
 **Periodo de ejecución:** 24 meses (`01/04/2027 – 31/03/2029`) · **Modalidad:** Proyectos de Investigación Avanzados Modalidad I (PROCIENCIA E041-2027-03).
 
-## Matriz de Actividades por Objetivo Específico
+![Diagrama de Gantt de Actividades por Objetivos Específicos](../assets/figures/gantt_objetivos.png)
+
+## Matriz Analítica de Actividades por Objetivo Específico
 
 | Cód. | Paquete / Actividad | Periodo | Responsable | Hito Verificable |
 | :--- | :--- | :--- | :--- | :--- |

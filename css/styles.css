@@ -353,6 +353,57 @@ section {
   text-align: center;
 }
 
+.figure-card {
+  background: #ffffff;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  padding: 1.4rem;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 1.6rem;
+}
+
+.figure-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.figure-caption {
+  margin-top: 0.85rem;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.figure-caption strong {
+  color: var(--esa-blue);
+}
+
+.method-block {
+  margin-bottom: 2.6rem;
+}
+
+.method-block-title {
+  color: var(--esa-blue);
+  font-size: 1.25rem;
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid var(--border-soft);
+}
+
+.formula-box {
+  background: var(--bg-light);
+  border-left: 4px solid var(--esa-light-blue);
+  padding: 0.85rem 1.1rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-family: "Courier New", monospace;
+  font-size: 0.86rem;
+  color: var(--esa-blue);
+  margin: 0.85rem 0;
+  overflow-x: auto;
+}
+
 .tutorials-panel {
   margin-top: 1.5rem;
   display: none;

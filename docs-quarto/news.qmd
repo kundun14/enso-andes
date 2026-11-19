@@ -2,6 +2,14 @@
 title: "Resultados Científicos Esperados y Entregables"
 ---
 
+## Criterios Cuantitativos de Validación
+
+![Criterios cuantitativos esperados de validación en DSSAT v4.8](../assets/figures/res1_validacion.png)
+
+## Simulación Espaciotemporal Esperada (1981–2024)
+
+![Resultado espaciotemporal esperado sobre grilla PISCO v3.0](../assets/figures/res2_espaciotemporal.png)
+
 ## Contrastación de Hipótesis
 
 | Componente | Resultado Científico Esperado | Criterio de Validación |

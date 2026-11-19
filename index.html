@@ -19,6 +19,7 @@
         <a href="#about">Resumen</a>
         <a href="#workpackages">Objetivos (WP)</a>
         <a href="#methods">Metodología</a>
+        <a href="#timeline">Cronograma</a>
         <a href="#results">Resultados</a>
         <a href="#consortium">Consorcio</a>
         <a href="#tools">Herramientas</a>
@@ -39,7 +40,8 @@
           fenotipado proximal IoT en <strong>K'ayra (Cusco)</strong> y <strong>La Molina (Lima)</strong>.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="./docs-quarto/pipeline.html">Explorar Pipeline (Quarto)</a>
+          <a class="btn btn-primary" href="#methods">Ver Metodología Detallada</a>
+          <a class="btn btn-outline" href="./docs-quarto/pipeline.html">Docs Quarto</a>
           <button id="open-domain-modal" class="btn btn-outline" type="button">Ficha del Proyecto</button>
         </div>
       </div>
@@ -55,8 +57,8 @@
             <span>Serie PISCO v3.0 (1981–2024)</span>
           </div>
           <div class="hero-stat-item">
-            <strong>2 Cultivos</strong>
-            <span>Papa (Cusco) &amp; Maíz (Lima)</span>
+            <strong>24 Sub-parcelas</strong>
+            <span>Split-Plot por localidad</span>
           </div>
           <div class="hero-stat-item">
             <strong>nRMSE &lt; 15%</strong>
@@ -70,34 +72,34 @@
   <section id="about">
     <div class="container">
       <div class="section-header">
-        <span class="section-eyebrow">01 · Resumen &amp; Problema</span>
+        <span class="section-eyebrow">01 · Resumen &amp; Marco de Hipótesis</span>
         <h2>Variabilidad hidroclimática ENSO y seguridad alimentaria</h2>
         <p>
-          Las fases cálida (El Niño) y fría (La Niña) generan impactos asimétricos: sequías y heladas en la sierra
-          andina (papa) y estrés térmico e hídrico en la costa central (maíz), provocando pérdidas de hasta 50% y
-          deterioro del valor nutricional.
+          Las fases cálida (El Niño) y fría (La Niña) generan impactos asimétricos: veranillos prolongados,
+          sequías y heladas en la sierra andina (papa) y anomalías térmicas e hídricas en la costa central (maíz),
+          provocando pérdidas de hasta 50% y deterioro del valor nutricional.
         </p>
       </div>
       <div class="grid-3">
         <article class="card">
-          <h3>Hidrofísica Experimental</h3>
+          <h3>Hipótesis Central</h3>
           <p>
-            Reemplazo de funciones de pedotransferencia genéricas por curvas pF medidas en Ollas de Richards
-            (0.1 a 15 bar) y ajuste de van Genuchten sobre núcleos inalterados.
+            La integración de curvas van Genuchten, control de riego por depleción (MAD) con ThetaProbe y
+            fenotipado proximal calibra DSSAT (<code>nRMSE &lt; 15%</code>) para simular 44 años (1981–2024).
           </p>
         </article>
         <article class="card">
-          <h3>Fenotipado Proximal IoT</h3>
+          <h3>Hipótesis 1 · Hidrodinámica</h3>
           <p>
-            Monitoreo continuo y no destructivo del dosel con 8 fenocámaras ESP32-CAM, ceptómetros AccuPAR LP-80
-            (fPAR/LAI) y sensores de humedad ThetaProbe ML3.
+            La caracterización hidrofísica en Ollas de Richards y el umbral MAD mantienen el potencial mátrico
+            sobre el daño fisiológico (<code>pF &gt; 3.0</code>) ahorrando 20%–30% de agua sin lixiviación.
           </p>
         </article>
         <article class="card">
-          <h3>Simulación Multidecadal</h3>
+          <h3>Hipótesis 2 · Sincronización</h3>
           <p>
-            Calibración de SUBSTOR-Potato y CERES-Maize (DSSAT v4.8) acoplados a 44 años de grilla diaria
-            PISCO v3.0 para definir ventanas de siembra y riego óptimo.
+            El ajuste estratégico de fechas de siembra desacopla floración y tuberización de los picos de estrés
+            ENSO, reduciendo entre 20% y 35% la vulnerabilidad agronómica.
           </p>
         </article>
       </div>
@@ -109,19 +111,19 @@
       <div class="section-header">
         <span class="section-eyebrow">02 · Paquetes de Trabajo por Objetivos</span>
         <h2>Estructura técnica del proyecto (OE 1, OE 2, OE 3 + Transversal)</h2>
-        <p>Articulación de tres objetivos específicos y un paquete transversal de difusión científica y gestión.</p>
+        <p>Articulación secuencial de tres objetivos específicos y un paquete transversal de difusión científica y gestión.</p>
       </div>
       <div class="grid-2">
         <article class="card">
           <span class="wp-badge">WP1 · OE 1 · Meses 2–8</span>
           <h3>Propiedades Hídrico-Edáficas</h3>
           <ul>
-            <li><strong>Act 1.1 – 1.2:</strong> Muestreo de 40 cilindros Uhland (0–100 cm) en K'ayra y La Molina.</li>
-            <li><strong>Act 1.3:</strong> Curvas pF en Ollas de Richards (0.1–15 bar) en Lab. UNSAAC.</li>
-            <li><strong>Act 1.4:</strong> Caracterización química completa (pH, CE, MO, N, P, K, CIC) en LASPAF-UNALM.</li>
-            <li><strong>Act 1.5:</strong> Ajuste van Genuchten y generación de archivos <code>.SOL</code> para DSSAT.</li>
+            <li><strong>Act 1.1 – 1.2:</strong> Calicatas (1.5×1.5×1.2 m) y 40 cilindros Uhland (100 cm³) en K'ayra y La Molina.</li>
+            <li><strong>Act 1.3:</strong> Curvas pF en Ollas de Richards (0.1, 0.33, 1.0, 3.0, 5.0 y 15.0 bar) en Lab. UNSAAC.</li>
+            <li><strong>Act 1.4:</strong> Caracterización química completa (Bouyoucos, Walkley-Black, pH, CE, CIC, P, K) en LASPAF-UNALM.</li>
+            <li><strong>Act 1.5:</strong> Ajuste Levenberg-Marquardt a van Genuchten y archivos <code>.SOL</code> para DSSAT.</li>
           </ul>
-          <a class="card-link" href="./docs-quarto/timeline.html">Ver cronograma WP1 →</a>
+          <a class="card-link" href="#timeline">Ver en el cronograma Gantt →</a>
         </article>
 
         <article class="card">
@@ -129,34 +131,34 @@
           <h3>Ecofisiología, Fenocámaras y Campo</h3>
           <ul>
             <li><strong>Act 2.1 – 2.2:</strong> Ensamblaje con CIP de 8 fenocámaras IoT y parcelas <em>split-plot</em> de 500 m².</li>
-            <li><strong>Act 2.3 – 2.4:</strong> Ensayos de papa (K'ayra) y maíz (La Molina) bajo 2 fechas y 2 riegos; monitoreo GCC, fPAR/LAI y biomasa.</li>
-            <li><strong>Act 2.5:</strong> Análisis nutricional (proteína, almidón, fibra, calorías, Fe, Zn) en LENA-UNALM.</li>
+            <li><strong>Act 2.3 – 2.4:</strong> Ensayos de papa (K'ayra) y maíz (La Molina) bajo 2 riegos × 3 fechas; monitoreo GCC, fPAR/LAI y biomasa quincenal.</li>
+            <li><strong>Act 2.5:</strong> Análisis bromatológico (materia seca, proteína Kjeldahl, almidón, FDN/FDA, energía Parr, Fe, Zn) en LENA-UNALM.</li>
             <li><strong>Act 2.6:</strong> Sustentación de 2 Tesis de Pregrado.</li>
           </ul>
-          <a class="card-link" href="./docs-quarto/pipeline.html">Ver flujo experimental →</a>
+          <a class="card-link" href="./docs-quarto/pipeline.html">Ver detalle experimental →</a>
         </article>
 
         <article class="card">
           <span class="wp-badge">WP3 · OE 3 · Meses 4–24</span>
           <h3>Modelamiento Retrospectivo ENSO</h3>
           <ul>
-            <li><strong>Act 3.1:</strong> Estructuración de series climáticas diarias PISCO v3.0 (1981–2024, <code>.WTH</code>).</li>
-            <li><strong>Act 3.2:</strong> Calibración genética GLUE de SUBSTOR-Potato y CERES-Maize (nRMSE &lt; 15%, d &gt; 0.85).</li>
-            <li><strong>Act 3.3 – 3.4:</strong> Simulaciones de 44 años (El Niño/La Niña/Neutro), ANOVA y ventanas óptimas.</li>
+            <li><strong>Act 3.1:</strong> Series climáticas diarias PISCO v3.0 (1981–2024, <code>.WTH</code>) y suelos regionales (AllpaDB, INIA, SoilGrids 2.0).</li>
+            <li><strong>Act 3.2:</strong> Calibración genética GCE/GLUE de SUBSTOR-Potato y CERES-Maize (nRMSE &lt; 15%, d<sub>r</sub> &gt; 0.85).</li>
+            <li><strong>Act 3.3 – 3.4:</strong> Simulaciones de 44 años, clasificación <code>ONI_agr</code>, ANOVA multifactorial y pruebas Tukey/Duncan.</li>
             <li><strong>Act 3.5:</strong> Sustentación de 1 Tesis de Maestría (UNSAAC).</li>
           </ul>
-          <a class="card-link" href="./docs-quarto/timeline.html">Ver hitos WP3 →</a>
+          <a class="card-link" href="#results">Ver resultados esperados →</a>
         </article>
 
         <article class="card">
           <span class="wp-badge">WP4 · Transversal · Meses 1–24</span>
           <h3>Difusión Científica, Transferencia y Gestión</h3>
           <ul>
-            <li><strong>Act 4.1 – 4.2:</strong> 2 artículos científicos en revistas Scopus Q1/Q2 en acceso abierto.</li>
-            <li><strong>Act 4.3:</strong> Talleres participativos en Cusco y Lima, días de campo y clubes de ciencias escolares.</li>
-            <li><strong>Act 5.1 – 5.2:</strong> Gestión físico-financiera ante PROCIENCIA y depósito en repositorio FAIR con DOI.</li>
+            <li><strong>Act 4.1 – 4.2:</strong> 2 artículos científicos sometidos a revistas Scopus Q1/Q2 en acceso abierto.</li>
+            <li><strong>Act 4.3:</strong> Talleres participativos en Cusco y Lima (60 participantes), días de campo y clubes de ciencias escolares.</li>
+            <li><strong>Act 5.1 – 5.2:</strong> Gestión físico-financiera ante PROCIENCIA y depósito en repositorio FAIR con DOI (CC BY 4.0 / MIT).</li>
           </ul>
-          <a class="card-link" href="./docs-quarto/news.html">Ver entregables y noticias →</a>
+          <a class="card-link" href="./docs-quarto/news.html">Ver entregables y metas →</a>
         </article>
       </div>
     </div>
@@ -165,68 +167,174 @@
   <section id="methods">
     <div class="container">
       <div class="section-header">
-        <span class="section-eyebrow">03 · Metodología</span>
-        <h2>Diseño biofísico acoplado Costa – Sierra</h2>
+        <span class="section-eyebrow">03 · Metodología Científico-Experimental</span>
+        <h2>Marco multiescalar: Hidrofísica, Campo Split-Plot y DSSAT v4.8</h2>
         <p>
-          Integración de mediciones de laboratorio, sensórica proximal en parcela y modelamiento mecanístico regional.
+          Reproducción estructurada de la metodología detallada del proyecto (UNALM – UNSAAC), articulando
+          mediciones de laboratorio, sensórica proximal IoT y modelamiento mecanístico regional.
         </p>
       </div>
-      <div class="grid-3">
-        <article class="card">
-          <h3>Sitios y Cultivares</h3>
-          <p>
-            <strong>Sierra (K'ayra, Cusco · 3,219 msnm):</strong> Papa cv. <em>Canchán</em> y <em>Yungay</em>.<br>
-            <strong>Costa (La Molina, Lima · 240 msnm):</strong> Maíz amarillo duro cv. <em>Marginal 28T</em>.
-          </p>
-        </article>
-        <article class="card">
-          <h3>Instrumentación en Campo</h3>
-          <p>
-            8 fenocámaras IoT (ESP32-CAM, registro 3 veces/día), 2 ceptómetros AccuPAR LP-80 (PAR/LAI),
-            2 sensores FDR ThetaProbe ML3 y estaciones meteorológicas automáticas.
-          </p>
-        </article>
-        <article class="card">
-          <h3>Estandarización y Calidad</h3>
-          <p>
-            Protocolos ICASA/DSSAT, escala fenológica BBCH, métodos AOAC en LENA, análisis en R/Python y
-            control estadístico con RMSE, nRMSE e índice de Willmott (<em>d</em>).
-          </p>
-        </article>
+
+      <div class="figure-card">
+        <img src="./assets/figures/fig1_flujo_general.png" alt="Figura 1: Diagrama de flujo metodológico general e interconexión de los tres objetivos">
+        <p class="figure-caption">
+          <strong>Figura 1.</strong> Diagrama de flujo metodológico general e interconexión funcional de los tres objetivos específicos (OE 1, OE 2 y OE 3) orientados a la mitigación de riesgos por El Niño y La Niña.
+        </p>
+      </div>
+
+      <div class="method-block">
+        <h3 class="method-block-title">3.1. Objetivo 1: Caracterización Hídrico-Edáfica Experimental</h3>
+        <div class="grid-2">
+          <article class="card">
+            <h3>Muestreo y Ensayos en Ollas de Richards</h3>
+            <p>
+              En K'ayra (3,219 msnm) y La Molina (240 msnm) se excavan calicatas de 1.5 × 1.5 × 1.2 m para extraer
+              cilindros Uhland (100 cm³) en tres profundidades (0–20, 20–40 y 40–60 cm) por cuadruplicado.
+              Tras saturación capilar de 48 h, se someten a seis potenciales mátricos (0.10, 0.33, 1.0, 3.0, 5.0 y 15.0 bar)
+              en cámaras Richards Modelos 1600 y 1500 (UNSAAC), complementado con análisis físico-químicos en LASPAF-UNALM.
+            </p>
+            <div class="formula-box">
+              θ(h) = θr + (θs − θr) / [1 + (α |h|)ⁿ]^(1 − 1/n) &nbsp;&nbsp;[van Genuchten, 1980]
+            </div>
+          </article>
+          <div class="figure-card" style="margin-bottom: 0;">
+            <img src="./assets/figures/fig3_curva_retencion.png" alt="Figura 3: Curva característica de retención de humedad van Genuchten">
+            <p class="figure-caption">
+              <strong>Figura 3.</strong> Curva característica de retención de humedad ajustada al modelo de van Genuchten delimitando el Agua Útil Disponible (<code>AD = θ_CC − θ_PMP</code>).
+            </p>
+          </div>
+        </div>
+        <div class="grid-2" style="margin-top: 1.5rem;">
+          <div class="figure-card" style="margin-bottom: 0;">
+            <img src="./assets/figures/fig2_flujo_suelo.png" alt="Figura 2: Flujo metodológico de caracterización del suelo">
+            <p class="figure-caption">
+              <strong>Figura 2.</strong> Flujo de caracterización física, química e hidrodinámica del suelo para derivar parámetros directos (<code>SAT, DUL, LL</code>) en perfiles <code>.SOL</code>.
+            </p>
+          </div>
+          <div class="figure-card" style="margin-bottom: 0;">
+            <img src="./assets/figures/fig14_richards_flujo.png" alt="Figura 14: Protocolo gravimétrico y volumétrico en cámaras Richards">
+            <p class="figure-caption">
+              <strong>Figura 4 (Anexo B).</strong> Flujo operativo con cilindros inalterados, ollas de Richards, secado a 105 °C y conversión a contenido volumétrico de agua (<code>θ = η × BD</code>).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="method-block">
+        <h3 class="method-block-title">3.2. Objetivo 2: Experimentación Split-Plot, Fenocámaras IoT y LENA</h3>
+        <div class="grid-2">
+          <div class="figure-card" style="margin-bottom: 0;">
+            <img src="./assets/figures/fig4_split_plot.png" alt="Figura 4: Croquis del diseño experimental en parcelas divididas Split-Plot">
+            <p class="figure-caption">
+              <strong>Figura 5.</strong> Diseño en parcelas divididas (<em>split-plot</em>) con 4 bloques completos al azar, 2 regímenes hídricos (<code>R1</code> óptimo vs <code>R2</code> déficit por depleción 50–60% AD) y 3 fechas de siembra semanales (<code>D1, D2, D3</code>): 24 sub-parcelas por localidad.
+            </p>
+          </div>
+          <div class="figure-card" style="margin-bottom: 0;">
+            <img src="./assets/figures/fig5_fenocamaras_gcc.png" alt="Figura 5: Seguimiento fenológico proximal con fenocámaras ESP32-CAM y ajuste logístico doble">
+            <p class="figure-caption">
+              <strong>Figura 6.</strong> Fenotipado proximal continuo con 8 fenocámaras ESP32-CAM (1.5 m en papa, 2.5 m en maíz, inclinación 60°): (a) delimitación de ROI; (b) serie temporal GCC<sub>90</sub> ajustada con regresión logística doble (SOS, SD, POP, DD, EOS).
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-3" style="margin-top: 1.5rem;">
+          <article class="card">
+            <h3>Ceptometría &amp; ThetaProbe</h3>
+            <p>
+              Mediciones semanales (11:30–13:30 h) de <code>fPAR</code> y <code>LAI</code> con ceptómetro AccuPAR LP-80
+              y control hídrico in situ en estratos 0–20 y 20–40 cm mediante sensor puntual ThetaProbe ML3.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Biomasa &amp; Calidad LENA</h3>
+            <p>
+              Muestreos destructivos quincenales desde los 25 DDE (SLA, materia seca, HI) y análisis bromatológico
+              en LENA-UNALM: proteína micro-Kjeldahl, almidón, FDN/FDA, energía Parr, Fe y Zn.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Calibración GCE / GLUE</h3>
+            <p>
+              Integración de archivos <code>.EXP</code>, <code>File A</code> y <code>File T</code> para calibrar
+              <code>SUBSTOR-Potato</code> (G2, G3, PD, TC, P2) y <code>CERES-Maize</code> (P1, P2, P5, G2, G3, PHINT).
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <div class="method-block" style="margin-bottom: 0;">
+        <h3 class="method-block-title">3.3. Objetivo 3: Modelamiento Regional DSSAT v4.8 y Análisis ENSO</h3>
+        <div class="grid-2">
+          <div class="figure-card" style="margin-bottom: 0;">
+            <img src="./assets/figures/fig6_dssat_flow.png" alt="Figura 6: Diagrama de flujo computacional de DSSAT v4.8">
+            <p class="figure-caption">
+              <strong>Figura 7.</strong> Flujo computacional de DSSAT v4.8 ingiriendo series PISCO v3.0 (1981–2024, <code>.WTH</code>), suelos regionales (AllpaDB, INIA, SoilGrids 2.0) y cultivares calibrados en OE 2.
+            </p>
+          </div>
+          <article class="card">
+            <h3>Clasificación ONI<sub>agr</sub> &amp; ANOVA Multifactorial</h3>
+            <p>
+              Las 44 campañas agrarias se clasifican mediante el ONI Agronómico Modificado (<code>ONI_agr</code> promedio de
+              SON, OND, NDJ y DJF: El Niño ≥ +0.5 °C, La Niña ≤ −0.5 °C). Las salidas simuladas se evalúan con
+              ANOVA trifactorial (Fase ENSO × Riego × Fecha de Siembra) y pruebas Tukey/Duncan (α = 0.05):
+            </p>
+            <div class="formula-box">
+              Y_ijkl = μ + E_i + R_j + D_k + (ER)_ij + (ED)_ik + (RD)_jk + (ERD)_ijk + ε_ijkl
+            </div>
+            <p>
+              Las métricas de validación exigen <code>nRMSE &lt; 15%</code> e índice de Willmott refinado <code>d_r &gt; 0.85</code>.
+            </p>
+          </article>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="results" class="section-bg-light">
+  <section id="timeline" class="section-bg-light">
     <div class="container">
       <div class="section-header">
-        <span class="section-eyebrow">04 · Resultados Científicos Esperados</span>
-        <h2>Contrastación de hipótesis y productos abiertos</h2>
+        <span class="section-eyebrow">04 · Cronograma de Actividades (24 Meses)</span>
+        <h2>Diagrama de Gantt por Objetivos Específicos (Abr 2027 – Mar 2029)</h2>
+        <p>Planificación temporal de las actividades de campo, laboratorio, modelamiento, tesis y publicaciones.</p>
+      </div>
+      <div class="figure-card" style="margin-bottom: 0;">
+        <img src="./assets/figures/gantt_objetivos.png" alt="Cronograma de actividades Diagrama de Gantt 24 meses">
+        <p class="figure-caption">
+          <strong>Figura 8.</strong> Cronograma oficial de 24 meses (4 semestres) organizado por OE 1 (Suelos e Hidrología), OE 2 (Campo, Fenocámaras y Pregrado) y OE 3 (Modelamiento DSSAT y Maestría).
+          <a class="card-link" href="./docs-quarto/timeline.html" style="margin-top: 0; margin-left: 0.5rem;">Ver matriz analítica completa en Quarto →</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="results">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">05 · Resultados Científicos Esperados</span>
+        <h2>Criterios cuantitativos de validación y mitigación espaciotemporal</h2>
         <p>Evidencia cuantitativa orientada a productores, juntas de usuarios, INIA, SENAMHI y ENFEN.</p>
       </div>
       <div class="grid-2">
-        <article class="card">
-          <h3>1. Base Abierta DSSAT v4.8 (.SOL, .CUL, .ECO)</h3>
-          <p>
-            Primeros perfiles hidrofísicos medidos en Ollas de Richards y coeficientes genéticos validados in situ
-            para papa Canchán y maíz Marginal 28T, con ahorro hídrico estimado de 20%–30% por umbral de agotamiento.
+        <div class="figure-card" style="margin-bottom: 0;">
+          <img src="./assets/figures/res1_validacion.png" alt="Criterios cuantitativos esperados de validación en DSSAT v4.8">
+          <p class="figure-caption">
+            <strong>Figura 9.</strong> (A) Curvas de probabilidad acumulada de rendimiento relativo bajo ENSO extremo comparando manejo convencional vs. adaptativo; (B) metas de calibración (<code>nRMSE &lt; 15%</code>, <code>d_r &gt; 0.85</code>).
           </p>
-        </article>
-        <article class="card">
-          <h3>2. Matriz Operativa de Riesgo Agroclimático</h3>
-          <p>
-            Guía de decisión vinculada a alertas ENFEN/SENAMHI con ventanas óptimas de siembra (±15–30 días),
-            riego deficitario controlado y proyección de reducción de pérdidas de cosecha del 20%–35%.
+        </div>
+        <div class="figure-card" style="margin-bottom: 0;">
+          <img src="./assets/figures/res2_espaciotemporal.png" alt="Resultado espaciotemporal esperado 1981-2024 sobre grilla PISCO v3.0">
+          <p class="figure-caption">
+            <strong>Figura 10.</strong> Reconstrucción multidecadal ilustrativa (1981–2024, PISCO v3.0) para papa cv. Canchán en Cusco (A1–A2) y maíz cv. Marginal 28T en Lima (B1–B2), proyectando reducciones de pérdida del 20% al 35%.
           </p>
-        </article>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="consortium">
+  <section id="consortium" class="section-bg-light">
     <div class="container">
       <div class="section-header">
-        <span class="section-eyebrow">05 · Consorcio &amp; Alianzas</span>
+        <span class="section-eyebrow">06 · Consorcio &amp; Alianzas</span>
         <h2>Instituciones participantes</h2>
         <p>Sinergia interregional entre la costa central y la sierra sur andina del Perú.</p>
       </div>
@@ -235,7 +343,7 @@
           <img class="consortium-logo" src="./assets/consorcio/molina.jpg" alt="Logo UNALM">
           <h3>UNALM (Lima)</h3>
           <p>
-            <strong>Entidad Solicitante.</strong> Conducción del ensayo de maíz en La Molina, análisis químicos en LASPAF,
+            <strong>Entidad Solicitante.</strong> Ensayo de maíz en La Molina, análisis químicos en LASPAF,
             calidad nutricional en LENA, Estación Humboldt y dirección científica.
           </p>
         </article>
@@ -243,7 +351,7 @@
           <img class="consortium-logo" src="./assets/consorcio/unsaac.jpg" alt="Logo UNSAAC">
           <h3>UNSAAC (Cusco)</h3>
           <p>
-            <strong>Entidad Asociada.</strong> Conducción del ensayo de papa en K'ayra, curvas pF en Ollas de Richards
+            <strong>Entidad Asociada.</strong> Ensayo de papa en K'ayra, curvas pF en Ollas de Richards
             (Lab. de Riego), tesis de maestría y pregrado en Cusco.
           </p>
         </article>
@@ -262,10 +370,10 @@
     </div>
   </section>
 
-  <section id="tools" class="section-bg-light">
+  <section id="tools">
     <div class="container">
       <div class="section-header">
-        <span class="section-eyebrow">06 · Herramientas &amp; Ciencia Abierta</span>
+        <span class="section-eyebrow">07 · Herramientas &amp; Ciencia Abierta</span>
         <h2>Ecosistema de software, hardware y datos FAIR</h2>
         <p>Todos los scripts, protocolos y conjuntos de datos validados se publicarán bajo licencia CC BY 4.0 / MIT.</p>
       </div>
@@ -298,10 +406,10 @@
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="section-bg-light">
     <div class="container">
       <div class="section-header">
-        <span class="section-eyebrow">07 · Contacto</span>
+        <span class="section-eyebrow">08 · Contacto</span>
         <h2>Equipo y coordinación</h2>
         <p>Concurso CONCYTEC–PROCIENCIA E041-2027-03 · UNALM &amp; UNSAAC.</p>
       </div>
